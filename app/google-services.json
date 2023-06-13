@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "85651185532",
+    "project_id": "taskmanagement-cc351",
+    "storage_bucket": "taskmanagement-cc351.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85651185532:android:2a4cab1d9f9bc2b21e4ef9",
+        "android_client_info": {
+          "package_name": "kg.geeks.taskmanagment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85651185532-a36a1l2cm2fo13dk5gkhes36q4pc1kue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnf22omZZJGl4H6W8oglW_77veq0X_2qs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85651185532-a36a1l2cm2fo13dk5gkhes36q4pc1kue.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

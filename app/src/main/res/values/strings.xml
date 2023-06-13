@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TaskManagement</string>
+    <string name="home">Home</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in_using_google">Sign In using google</string>
+    <string name="car_name">Car name:</string>
+    <string name="car_model">Car model:</string>
+    <string name="name">Name:</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="get_started">Get Started</string>
+    <string name="update">Update</string>
+    <string name="empty_fields">Empty Fields!</string>
+</resources>

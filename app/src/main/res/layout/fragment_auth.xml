@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".ui.fragment.auth.AuthFragment">
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_google_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="180dp"
+        android:layout_height="180dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:drawableStart="@drawable/ic_google_btn"
+        android:text="@string/sign_in_using_google"
+        android:textAllCaps="false" />
+
+</FrameLayout>
