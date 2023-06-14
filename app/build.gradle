@@ -38,8 +38,14 @@ android {
 }
 
 dependencies {
+
+    //firebase firestore
+    implementation 'com.google.firebase:firebase-firestore:24.6.1'
+    //firebase auth
     implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
     implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.1.2'
+    implementation 'com.google.firebase:firebase-messaging:23.0.3'
 
 
     //room database

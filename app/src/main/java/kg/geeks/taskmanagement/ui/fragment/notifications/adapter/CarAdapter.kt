@@ -12,7 +12,7 @@ class CarAdapter() : RecyclerView.Adapter<CarAdapter.TaskViewHolder>() {
 
     private val arrayList = ArrayList<Car>()
 
-    fun addTasks(cars: List<Car>) {
+    fun addCars(cars: List<Car>) {
         arrayList.clear()
         arrayList.addAll(cars)
         notifyDataSetChanged()

@@ -22,6 +22,7 @@ class ProfileFragment : Fragment() {
 
     private lateinit var binding: FragmentProfileBinding
     private lateinit var pref: Pref
+    //private val auth = FirebaseAuth.getInstance()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,8 +61,16 @@ class ProfileFragment : Fragment() {
         }
 
         binding.ivLogout.setOnClickListener {
-            FirebaseAuth.getInstance().signOut()
-            findNavController().navigate(R.id.action_navigation_profile_to_authFragment)
+
+            AlertDialog.Builder(requireContext())
+                .setTitle("Sign Out")
+                .setMessage("Are you sure you want to sign out?")
+                .setPositiveButton("Exit") { _, _ ->
+                    FirebaseAuth.getInstance().signOut()
+                    findNavController().navigate(R.id.action_navigation_profile_to_authFragment)
+                }
+                .setNegativeButton("Cancel", null)
+                .show()
         }
     }
 

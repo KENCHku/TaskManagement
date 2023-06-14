@@ -2,6 +2,7 @@ package kg.geeks.taskmanagement
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.core.view.isVisible
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -9,6 +10,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.messaging.FirebaseMessaging
 import kg.geeks.taskmanagement.data.local.pref.Pref
 import kg.geeks.taskmanagment.R
 import kg.geeks.taskmanagment.databinding.ActivityMainBinding
@@ -27,6 +29,9 @@ class MainActivity : AppCompatActivity() {
         pref = Pref(this)
 
         initGeneralUI()
+        FirebaseMessaging.getInstance().token.addOnSuccessListener {
+            Log.e("ololo", "onCreate: " + it)
+        }
     }
 
     private fun initGeneralUI() {
@@ -65,7 +70,7 @@ class MainActivity : AppCompatActivity() {
             navController.navigate(R.id.onBoardFragment)
         }
 
-        if (FirebaseAuth.getInstance().currentUser == null){
+        if (FirebaseAuth.getInstance().currentUser == null) {
             navController.navigate(R.id.authFragment)
         }
     }
