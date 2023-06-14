@@ -42,33 +42,3 @@ class PushNotificationsService : FirebaseMessagingService() {
         const val CHANNEL_ID = "HEADS_UP_NOTIFICATION"
     }
 }
-
-/*  val channel = NotificationChannel(
-        CHANNEL_ID, "TASK_55",
-        NotificationManager.IMPORTANCE_HIGH
-    )
-c     Log.e("ololo", "onMessageReceived: " + message.notification?.title)
-        Log.e("ololo", "onMessageReceived: " + message.notification?.body)
-
-
-    override fun onMessageReceived(message: RemoteMessage) {
-        createNotification(message)
-        super.onMessageReceived(message)
-    }
-
-    private fun createNotification(message: RemoteMessage) {
-        getSystemService(NotificationManager::class.java).createNotificationChannel(channel)
-
-        val notification: Notification.Builder = Notification.Builder(this, CHANNEL_ID)
-            .setContentTitle(message.notification?.title)
-            .setContentText(message.notification?.body)
-            .setSmallIcon(R.mipmap.ic_launcher)
-            .setAutoCancel(true)
-
-           // NotificationManagerCompat.from(this).notify(1, notification.build())
-    }
-
-    companion object {
-        const val CHANNEL_ID = "HEADS_UP_NOTIFICATION_55"
-    }*/
-
